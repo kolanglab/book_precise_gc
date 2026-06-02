@@ -1,0 +1,18 @@
+# brief.yml - Book brief for ligarb write
+title: "My Book"
+language: ja
+audience: "学部1年生くらいで、インタプリタに興味がある人。GC は名前だけ知ってそうな人"
+notes: |
+  Precise GC （copying など）をインタプリタに実装する方法がわかる本です。
+  次のような順番。章立ては一致してなくて大丈夫。
+  * 本書の概要
+  * Precise GC とは何か、基礎知識
+  * インタプリタの基礎知識
+  * インタプリタを Precise GC 用にする方法の基礎知識
+  * Precise GC を高速に実装するテクニック
+  * 実践編（簡単なインタプリタを precise GC にする例）
+  注意:
+  * 未使用用語は説明する
+  * 例だけの (sub)section は作らない。ちゃんと説明する
+  * コードを出すだけの (sub)section は作らない。ちゃんと説明する
+  * 参考文献は積極的に引用する

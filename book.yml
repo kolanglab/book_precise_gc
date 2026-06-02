@@ -1,0 +1,16 @@
+title: "精密 GC をインタプリタに実装する"
+author: "（AI 生成）"
+language: "ja"
+ai_generated: true
+bibliography: references.bib
+chapters:
+  - cover: cover.md
+  - overview.md
+  - what-is-precise-gc.md
+  - interpreter-basics.md
+  - making-interpreter-gc-ready.md
+  - copying-gc.md
+  - fast-techniques.md
+  - practice.md
+  - appendix:
+    - glossary.md
