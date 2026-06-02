@@ -1,5 +1,5 @@
 title: "精密 GC をインタプリタに実装する"
-author: "（AI 生成）"
+author: "Claude code (asked by ko1)"
 language: "ja"
 ai_generated: true
 bibliography: references.bib
@@ -18,4 +18,3 @@ chapters:
 github_review:
   enabled: true
 repository: https://github.com/ko1/book_precise_gc
-
