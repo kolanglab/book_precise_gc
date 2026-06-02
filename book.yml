@@ -14,3 +14,7 @@ chapters:
   - practice.md
   - appendix:
     - glossary.md
+
+github_review:
+  enabled: true
+repository: https://github.com/ko1/book_precise_gc

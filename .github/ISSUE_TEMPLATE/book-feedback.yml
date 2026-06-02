@@ -1,0 +1,43 @@
+name: 本へのフィードバック
+description: 本文の誤り・わかりにくい点・疑問を報告する
+title: "[feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本を読んで気づいた点を報告してください。
+        （ligarb の公開ページから「Report as issue」で来た場合、いくつかの項目は自動入力されています。）
+  - type: input
+    id: location
+    attributes:
+      label: 対象箇所
+      description: 章・節、ソースの Markdown ファイル名、公開サイトの該当 URL など
+      placeholder: "例: 第3章 2節 / 03-advanced.md / https://__OWNER__.github.io/__REPO__/#ch3-2"
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: 引用テキスト
+      description: 問題の箇所を本文から引用してください
+      render: markdown
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 種類
+      options:
+        - 誤り（事実誤認・誤字・壊れたコード例など）
+        - わかりにくい（説明・構成・例の改善提案）
+        - 疑問（直す必要はないが確認したい）
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      description: 何が問題か、どう直すとよいか、または何を確認したいか
+    validations:
+      required: true
