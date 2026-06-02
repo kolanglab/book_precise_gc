@@ -98,8 +98,6 @@ jobs:
           #  （雑談なら何もせず終了）。コストを厳しく抑えたいなら、gate と claude の間に
           #   haiku の一次判定 step を足して雑談を弾く拡張も可能。
           claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 40"
-          # 診断用: 隠れている denial を見えるようにする（確認できたら外してよい）。
-          show_full_output: true
           # Bash 他を解禁しないと git/gh/ligarb や編集ができず、修正も PR もできない
           # （claude-code-action は既定で限られたツールしか許可しないため）。
           settings: |
