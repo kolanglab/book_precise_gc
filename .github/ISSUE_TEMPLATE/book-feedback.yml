@@ -13,7 +13,7 @@ body:
     attributes:
       label: 対象箇所
       description: 章・節、ソースの Markdown ファイル名、公開サイトの該当 URL など
-      placeholder: "例: 第3章 2節 / 03-advanced.md / https://__OWNER__.github.io/__REPO__/#ch3-2"
+      placeholder: "例: 第3章 2節 / 03-advanced.md / https://ko1.github.io/book_precise_gc/#ch3-2"
     validations:
       required: true
   - type: textarea
@@ -24,20 +24,10 @@ body:
       render: markdown
     validations:
       required: true
-  - type: dropdown
-    id: type
-    attributes:
-      label: 種類
-      options:
-        - 誤り（事実誤認・誤字・壊れたコード例など）
-        - わかりにくい（説明・構成・例の改善提案）
-        - 疑問（直す必要はないが確認したい）
-    validations:
-      required: true
   - type: textarea
     id: details
     attributes:
       label: 詳細
-      description: 何が問題か、どう直すとよいか、または何を確認したいか
+      description: 気づいた点を自由に書いてください（誤り・わかりにくい点・疑問など、何でも）。種類の分類は不要です。対応の要否は内容を読んで判断します。
     validations:
       required: true

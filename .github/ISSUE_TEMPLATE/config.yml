@@ -1,5 +1,5 @@
 blank_issues_enabled: false
-# contact_links:
-#   - name: 一般的な質問・議論
-#     url: https://github.com/__OWNER__/__REPO__/discussions
-#     about: 本の内容と関係ない質問や雑談はこちら（Discussions を有効にしている場合）
+contact_links:
+  - name: 一般的な質問・議論
+    url: https://github.com/ko1/book_precise_gc/discussions
+    about: 本の内容と関係ない質問や雑談はこちら（Discussions を有効にしている場合）

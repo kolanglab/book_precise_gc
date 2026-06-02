@@ -98,8 +98,8 @@ jobs:
           #  （雑談なら何もせず終了）。コストを厳しく抑えたいなら、gate と claude の間に
           #   haiku の一次判定 step を足して雑談を弾く拡張も可能。
           claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 40"
-          # Bash 他を解禁しないと git/gh/ligarb や編集ができず、修正も PR もできない
-          # （claude-code-action は既定で限られたツールしか許可しないため）。
+          # Claude が git/gh/ligarb の実行や編集をできるようツールを許可する。
+          # これが無いと既定では任意 Bash 等が拒否され、修正もコミットもできない。
           settings: |
             {"permissions": {"allow": ["Bash", "Edit", "Write", "Read", "Glob", "Grep", "WebFetch", "WebSearch", "TodoWrite"]}}
           prompt: |
