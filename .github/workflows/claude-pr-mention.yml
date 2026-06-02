@@ -97,7 +97,11 @@ jobs:
           # 「作業依頼か雑談か」の見極めは下のプロンプトで Claude 自身に任せる
           #  （雑談なら何もせず終了）。コストを厳しく抑えたいなら、gate と claude の間に
           #   haiku の一次判定 step を足して雑談を弾く拡張も可能。
-          claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 30"
+          claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 40"
+          # Bash を解禁しないと git/gh/ligarb が実行できず、修正も PR もできない
+          # （claude-code-action は既定で任意 Bash を許可しないため）。
+          settings: |
+            {"permissions": {"allow": ["Bash"]}}
           prompt: |
             あなたは技術書（教科書）の PR レビューで動く編集アシスタントです。
             この PR のスレッドにコメントが付きました。

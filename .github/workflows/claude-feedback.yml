@@ -97,7 +97,11 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 30"
+          claude_args: "--model ${{ needs.gate.outputs.model }} --max-turns 40"
+          # Bash を解禁しないと git/gh/ligarb が実行できず、修正も PR もできない
+          # （claude-code-action は既定で任意 Bash を許可しないため）。
+          settings: |
+            {"permissions": {"allow": ["Bash"]}}
           prompt: |
             あなたは技術書（教科書）のリポジトリで動く編集アシスタントです。
             対象の issue は #${{ github.event.issue.number }} です。
