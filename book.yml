@@ -17,4 +17,4 @@ chapters:
 
 github_review:
   enabled: true
-repository: https://github.com/ko1/book_precise_gc
+repository: https://github.com/kolanglab/book_precise_gc
