@@ -1,15 +1,5 @@
-# ligarb book project
+# このプロジェクトについて
 
-This is a book project using [ligarb](https://github.com/ko1/ligarb).
+このディレクトリは **ligarb** で管理された書籍プロジェクトです。書名などのメタデータは `book.yml` を参照。
 
-## Commands
-
-- `ligarb build` — Build the book (generates build/index.html)
-- `ligarb help` — Show full specification (Markdown syntax, config options, etc.)
-
-## Key rules
-
-- All chapter files are Markdown (.md), listed in book.yml
-- The first h1 in each file is the chapter title
-- Use ```mermaid, ```math, admonitions (> [!NOTE]), etc. as needed
-- Run `ligarb build` after changes to verify the output
+ligarb の仕様(コマンド、book.yml の書式、Markdown 拡張記法など)は `ligarb help` で確認できる。
