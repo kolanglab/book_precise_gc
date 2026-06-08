@@ -1,4 +1,5 @@
 title: "精密 GC をインタプリタに実装する"
+description: "インタプリタに正確な（precise）GC を実装する"
 author: "Claude code (asked by ko1)"
 language: "ja"
 ai_generated: true
